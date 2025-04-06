@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unified AI Assistant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .card {
+            background-color: #fff;
+            width: 80%;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h2 {
+            color: #4CAF50;
+            margin-top: 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .form-control {
+            margin: 10px 0;
+        }
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 30px;
+        }
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Unified AI Assistant</h1>
+        <p>Your gateway to intelligent agents and seamless solutions.</p>
+    </header>
+    <nav>
+        <a href="#recommendation-engine">Recommendation Engine</a>
+        <a href="#product-catalog">Product Catalog</a>
+        <a href="#customer-intent">Customer Intent</a>
+        <a href="#profile-analyzer">Profile Analyzer</a>
+        <a href="#learning-evaluation">Learning Evaluation</a>
+    </nav>
+    <div class="container">
+        <div class="card" id="recommendation-engine">
+            <h2>Recommendation Engine</h2>
+            <p>Generate personalized product recommendations based on user preferences.</p>
+            <form>
+                <div class="form-control">
+                    <label for="user-id">User ID:</label>
+                    <input type="number" id="user-id" placeholder="Enter User ID">
+                </div>
+                <div class="form-control">
+                    <label for="price-range">Price Range:</label>
+                    <input type="text" id="price-range" placeholder="E.g., 100-500">
+                </div>
+                <button type="submit">Get Recommendations</button>
+            </form>
+        </div>
+        <div class="card" id="product-catalog">
+            <h2>Product Catalog</h2>
+            <p>Search and filter products in the catalog.</p>
+            <form>
+                <div class="form-control">
+                    <label for="keyword">Search Keyword:</label>
+                    <input type="text" id="keyword" placeholder="Enter keyword to search">
+                </div>
+                <div class="form-control">
+                    <label for="category">Category:</label>
+                    <select id="category">
+                        <option value="electronics">Electronics</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="home-decor">Home Decor</option>
+                    </select>
+                </div>
+                <button type="submit">Search Products</button>
+            </form>
+        </div>
+        <div class="card" id="customer-intent">
+            <h2>Customer Intent Analysis</h2>
+            <p>Analyze customer intent based on browsing and purchase history.</p>
+            <button>Start Intent Analysis</button>
+        </div>
+        <div class="card" id="profile-analyzer">
+            <h2>Profile Analyzer</h2>
+            <p>Generate actionable insights from customer profiles.</p>
+            <form>
+                <div class="form-control">
+                    <label for="customer-id">Customer ID:</label>
+                    <input type="number" id="customer-id" placeholder="Enter Customer ID">
+                </div>
+                <button type="submit">Analyze Profile</button>
+            </form>
+        </div>
+        <div class="card" id="learning-evaluation">
+            <h2>Learning Evaluation</h2>
+            <p>Evaluate machine learning models and their performance.</p>
+            <button>Evaluate Models</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Unified AI Assistant. All rights reserved.</p>
+    </div>
+</body>
+</html>
